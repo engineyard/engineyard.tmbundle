@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Engine Yard</string>
+	<key>ordering</key>
+	<array>
+		<string>CA9EDAEB-8611-4509-BE50-F76D7112316E</string>
+		<string>68DEBCE0-334B-4393-B003-C80CAEDD8F40</string>
+		<string>0621F39B-6D4C-4377-A0C9-58F920847A92</string>
+		<string>C5866E51-DC32-4EC0-92AC-53CDAE19D971</string>
+	</array>
+	<key>uuid</key>
+	<string>229D34BC-3D8D-4792-A5DA-4441A818A38F</string>
+</dict>
+</plist>
