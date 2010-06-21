@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <style type="text/css" media="screen">
+      html{height:90%;}
+      body{margin:0;padding:0;color:#333;background:#F8F8F8;font:75%/130% Lucida Grande,Verdana,sans-serif;padding-bottom:60px;height:100%;}
+      a{color:#444;text-decoration:underline;}
+      a:visited{color:#444;text-decoration:underline;}
+      a:hover,a:active{color:#000;text-decoration:underline;}
+      a img{border:none;}
+      ul,ol{padding:0 0 0 30px;margin-bottom:30px;}
+      ul{list-style:square;}
+      #header a{color:#666;}
+      #header a:visited{color:#666;}
+      #header a.active{color:#333;}
+      pre{font-family:"Monaco","Courier New",sans-serif;font-size:11px;}
+      code{font-family:"Monaco","Courier New",sans-serif;font-size:11px;font-size:12px;background:#EEE;padding:1px 2px;border:1px solid #E6E6E6;}
+      .updated{font-weight:bold;text-transform:uppercase;font-size:8px;color:#339900;}
+  
+      /* --- Custom --- */
+      pre{margin:15px;}
+      #framework_env{margin-top:6px;}
+      /* --- // Custom --- */
+  
+      #content{padding-bottom:40px;}
+      #header,#impersonating,#main{/* min-width:1200px;*/}
+      #impersonating{background:#c70000;border-bottom:1px solid #000;color:#fff;font-size:1.4em;font-weight:bold;padding:0.5em;text-align:center;}
+      #header{background:#fcfcfc url('https://cloud.engineyard.com/images/bg_header.gif') repeat-x bottom;_overflow:visible;_zoom:1;overflow:hidden;}
+      #header #branding,#header #links{margin:5px 0;padding:.3em 1.3em;}
+      #header #branding{float:left;}
+      #header #branding #product{color:#C70000;font-weight:bold;}
+      #header #links{float:right;white-space:nowrap;}
+      #header #links li{display:inline;padding:5px 6px 6px;}
+      #header #links li:first-child{border-left:1px solid #CCC;padding-left:20px;}
+      #header #links li#search{border-left:1px solid #CCC;padding-left:15px;color:#666;}
+      #header #links li#search input{background:#EAEAEA;padding:3px;margin:0 0 0 10px;border:1px solid #CCC;color:#333;}
+      #header #links li#search input:focus{background:#FFF;}
+      #header #links a{margin-right:1em;text-decoration:none;}
+      #header #links a:hover{color:#000;}
+  
+      #message{padding:10px;margin-bottom:4px;}
+      #message.error{color:#900;background:#FFF0F0;border:1px solid #900;}
+      div.error{color:#900;background:#FFF0F0;border:1px solid #900;}
+      div.error h2{margin-left:15px;}
+      #message.error ul,div.error ul{padding-left:30px;}
+      input.error{border:1px solid #930;border-left:6px solid #930;}
+      #message.info{color:#390;background:#F0F7D9;border:1px solid #690;}
+      #message.notice,#message.sitewide_notice,#message.notices div.notice{color:#999;background:#FFFFE5;border:1px solid #CCC;}
+      #message.notices{padding:0px;}
+      #message.notices div.notice{margin-bottom:4px;padding:1em 5em 1em 1em;position:relative;}
+      #message.notices div.notice a.hide{position:absolute;right:1em;top:1em;}
+      ul.notices{list-style:none;margin-left:0;padding-left:0;}
+      ul.notices li form{margin:0;}
+      ul.notices li form input[type=submit]{margin:0;position:absolute;right:1em;top:1em;}
+      ul.notices li form input[type=text]{width:800px;background:transparent;border:none;margin:0;position:absolute;left:1em;top:1em;}
+      ul.notices li{margin-left:0;padding:10px;border:1px solid #CCA;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;margin-bottom:10px;position:relative;background:-moz-linear-gradient(top,#FFFFE5,#FFFFF5);background:-webkit-gradient(linear,left top,left bottom,from(#FFFFE5),to(#FFFFF5));}
+      ul.notices li.hidden{border-color:#CCC;background:-moz-linear-gradient(top,#E5E5E5,#F5F5F5);background:-webkit-gradient(linear,left top,left bottom,from(#E5E5E5),to(#F5F5F5));}
+      ul.notices li .subtext{margin-top:5px;display:block;color:#999;font-size:0.7em;}
+      ul.notices li .hide{position:absolute;right:1em;top:1em;}
+    </style>
+  </head>
+  <body>
+    <div id='header'>
+      <div id='branding'>
+        <span id='product'>Engine Yard Cloud&trade;</span>
+      </div>
+      <select name="environment[framework_env]" custom="" id="framework_env">
+        <optgroup>
+        <option value="custom">custom</option>
+        <option value="development">development</option>
+        <option selected="selected" value="production">production</option>
+        <option value="staging">staging</option>
+        </optgroup>
+        <optgroup>
+          <option value="refresh">refresh</option>
+        </optgroup>
+      </select>
+      <!-- menu bar -->
+      <ul id='links'>
+        <!-- <li>Dr Nic Williams</li> -->
+        <!-- <li><a href="http://community.engineyard.com">Community Forum</a></li> -->
+        <!-- <li><a href='/sso/logout'>Logout</a></li> -->
+      </ul>
+    </div>
+
+    <pre>
+<span style="color: green;">Connecting to the server...</span>
+<span style="color: green;">Running deploy for 'oss8stepsapp_production' on server...</span>
+ssh -o StrictHostKeyChecking=no -q deploy@ec2-184-72-250-172.compute-1.amazonaws.com '/usr/local/ey_resin/ruby/bin/eysd deploy --app oss8stepsapp --repo git@github.com:drnic/oss-8steps-app.git --branch master --migrate '\''rake db:migrate'\'' --instances ec2-184-72-250-172.compute-1.amazonaws.com,solo'
+::   i-73f91e19 running git --git-dir /data/oss8stepsapp/shared/cached-copy/.git --work-tree /data/oss8stepsapp/shared/cached-copy fetch origin
+::   i-73f91e19 running git --git-dir /data/oss8stepsapp/shared/cached-copy/.git --work-tree /data/oss8stepsapp/shared/cached-copy checkout 'origin/master'
+~> Pushing code to all servers
+~> Starting full deploy
+~> copying to /data/oss8stepsapp/releases/20100621045434
+::   i-73f91e19 running sudo sh -l -c 'mkdir -p /data/oss8stepsapp/releases/20100621045434 && rsync -aq  /data/oss8stepsapp/shared/cached-copy/ /data/oss8stepsapp/releases/20100621045434'
+~> ensuring proper ownership
+::   i-73f91e19 running sudo sh -l -c 'chown -R deploy:deploy /data/oss8stepsapp'
+~> Symlinking configs
+::   i-73f91e19 running sudo sh -l -c 'chmod -R g+w /data/oss8stepsapp/releases/20100621045434'
+::   i-73f91e19 running sudo sh -l -c 'rm -rf /data/oss8stepsapp/releases/20100621045434/log /data/oss8stepsapp/releases/20100621045434/public/system /data/oss8stepsapp/releases/20100621045434/tmp/pids'
+::   i-73f91e19 running sudo sh -l -c 'mkdir -p /data/oss8stepsapp/releases/20100621045434/tmp'
+::   i-73f91e19 running sudo sh -l -c 'ln -nfs /data/oss8stepsapp/shared/log /data/oss8stepsapp/releases/20100621045434/log'
+::   i-73f91e19 running sudo sh -l -c 'mkdir -p /data/oss8stepsapp/releases/20100621045434/public'
+::   i-73f91e19 running sudo sh -l -c 'mkdir -p /data/oss8stepsapp/releases/20100621045434/config'
+::   i-73f91e19 running sudo sh -l -c 'ln -nfs /data/oss8stepsapp/shared/system /data/oss8stepsapp/releases/20100621045434/public/system'
+::   i-73f91e19 running sudo sh -l -c 'ln -nfs /data/oss8stepsapp/shared/pids /data/oss8stepsapp/releases/20100621045434/tmp/pids'
+::   i-73f91e19 running sudo sh -l -c 'ln -nfs /data/oss8stepsapp/shared/config/database.yml /data/oss8stepsapp/releases/20100621045434/config/database.yml'
+::   i-73f91e19 running sudo sh -l -c 'ln -nfs /data/oss8stepsapp/shared/config/mongrel_cluster.yml /data/oss8stepsapp/releases/20100621045434/config/mongrel_cluster.yml'
+::   i-73f91e19 running sudo sh -l -c 'chown -R deploy:deploy /data/oss8stepsapp/releases/20100621045434'
+::   i-73f91e19 running sudo sh -l -c 'if [ -f "/data/oss8stepsapp/shared/config/newrelic.yml" ]; then ln -nfs /data/oss8stepsapp/shared/config/newrelic.yml /data/oss8stepsapp/releases/20100621045434/config/newrelic.yml; fi'
+::   i-73f91e19 running sh -l -c 'cp '\''/usr/local/ey_resin/ruby/lib/ruby/gems/1.8/gems/ey-deploy-0.6.0/lib/ey-deploy/default_maintenance_page.html'\'' '\''/data/oss8stepsapp/shared/system/maintenance.html'\'
+~> migrating
+~> Migrating: cd /data/oss8stepsapp/releases/20100621045434 && RAILS_ENV=production RACK_ENV=production MERB_ENV=production rake db:migrate
+::   i-73f91e19 running sh -l -c 'cd /data/oss8stepsapp/releases/20100621045434 && RAILS_ENV=production RACK_ENV=production MERB_ENV=production rake db:migrate'
+(in /data/oss8stepsapp/releases/20100621045434)
+~> symlinking code
+::   i-73f91e19 running sudo sh -l -c 'rm -f /data/oss8stepsapp/current && ln -nfs /data/oss8stepsapp/releases/20100621045434 /data/oss8stepsapp/current && chown -R deploy:deploy /data/oss8stepsapp/current'
+~> Restarting app servers
+~> restarting app: /data/oss8stepsapp/releases/20100621045434
+::   i-73f91e19 running sudo sh -l -c 'monit restart all -g oss8stepsapp'
+::   i-73f91e19 running sh -l -c 'rm -f /data/oss8stepsapp/shared/system/maintenance.html'
+~> cleaning up old releases
+::   i-73f91e19 running sudo sh -l -c 'ls /data/oss8stepsapp/releases | head -n -3 | xargs -I{} rm -rf /data/oss8stepsapp/releases/{}'
+~> finalizing deploy
+<span style="color: green;">Deploy complete</span>

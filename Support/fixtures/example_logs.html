@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <style type="text/css" media="screen">
+      html{height:90%;}
+      body{margin:0;padding:0;color:#333;background:#F8F8F8;font:75%/130% Lucida Grande,Verdana,sans-serif;padding-bottom:60px;height:100%;}
+      a{color:#444;text-decoration:underline;}
+      a:visited{color:#444;text-decoration:underline;}
+      a:hover,a:active{color:#000;text-decoration:underline;}
+      a img{border:none;}
+      ul,ol{padding:0 0 0 30px;margin-bottom:30px;}
+      ul{list-style:square;}
+      #header a{color:#666;}
+      #header a:visited{color:#666;}
+      #header a.active{color:#333;}
+      pre{font-family:"Monaco","Courier New",sans-serif;font-size:11px;}
+      code{font-family:"Monaco","Courier New",sans-serif;font-size:11px;font-size:12px;background:#EEE;padding:1px 2px;border:1px solid #E6E6E6;}
+      .updated{font-weight:bold;text-transform:uppercase;font-size:8px;color:#339900;}
+  
+      /* --- Custom --- */
+      pre{margin:15px;}
+      #framework_env{margin-top:6px;}
+      /* --- // Custom --- */
+  
+      #content{padding-bottom:40px;}
+      #header,#impersonating,#main{/* min-width:1200px;*/}
+      #impersonating{background:#c70000;border-bottom:1px solid #000;color:#fff;font-size:1.4em;font-weight:bold;padding:0.5em;text-align:center;}
+      #header{background:#fcfcfc url('https://cloud.engineyard.com/images/bg_header.gif') repeat-x bottom;_overflow:visible;_zoom:1;overflow:hidden;}
+      #header #branding,#header #links{margin:5px 0;padding:.3em 1.3em;}
+      #header #branding{float:left;}
+      #header #branding #product{color:#C70000;font-weight:bold;}
+      #header #links{float:right;white-space:nowrap;}
+      #header #links li{display:inline;padding:5px 6px 6px;}
+      #header #links li:first-child{border-left:1px solid #CCC;padding-left:20px;}
+      #header #links li#search{border-left:1px solid #CCC;padding-left:15px;color:#666;}
+      #header #links li#search input{background:#EAEAEA;padding:3px;margin:0 0 0 10px;border:1px solid #CCC;color:#333;}
+      #header #links li#search input:focus{background:#FFF;}
+      #header #links a{margin-right:1em;text-decoration:none;}
+      #header #links a:hover{color:#000;}
+  
+      #message{padding:10px;margin-bottom:4px;}
+      #message.error{color:#900;background:#FFF0F0;border:1px solid #900;}
+      div.error{color:#900;background:#FFF0F0;border:1px solid #900;}
+      div.error h2{margin-left:15px;}
+      #message.error ul,div.error ul{padding-left:30px;}
+      input.error{border:1px solid #930;border-left:6px solid #930;}
+      #message.info{color:#390;background:#F0F7D9;border:1px solid #690;}
+      #message.notice,#message.sitewide_notice,#message.notices div.notice{color:#999;background:#FFFFE5;border:1px solid #CCC;}
+      #message.notices{padding:0px;}
+      #message.notices div.notice{margin-bottom:4px;padding:1em 5em 1em 1em;position:relative;}
+      #message.notices div.notice a.hide{position:absolute;right:1em;top:1em;}
+      ul.notices{list-style:none;margin-left:0;padding-left:0;}
+      ul.notices li form{margin:0;}
+      ul.notices li form input[type=submit]{margin:0;position:absolute;right:1em;top:1em;}
+      ul.notices li form input[type=text]{width:800px;background:transparent;border:none;margin:0;position:absolute;left:1em;top:1em;}
+      ul.notices li{margin-left:0;padding:10px;border:1px solid #CCA;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;margin-bottom:10px;position:relative;background:-moz-linear-gradient(top,#FFFFE5,#FFFFF5);background:-webkit-gradient(linear,left top,left bottom,from(#FFFFE5),to(#FFFFF5));}
+      ul.notices li.hidden{border-color:#CCC;background:-moz-linear-gradient(top,#E5E5E5,#F5F5F5);background:-webkit-gradient(linear,left top,left bottom,from(#E5E5E5),to(#F5F5F5));}
+      ul.notices li .subtext{margin-top:5px;display:block;color:#999;font-size:0.7em;}
+      ul.notices li .hide{position:absolute;right:1em;top:1em;}
+    </style>
+  </head>
+  <body>
+    <div id='header'>
+      <div id='branding'>
+        <span id='product'>Engine Yard Cloud&trade;</span>
+      </div>
+      <select name="environment[framework_env]" custom="" id="framework_env">
+        <optgroup>
+        <option value="custom">custom</option>
+        <option value="development">development</option>
+        <option selected="selected" value="production">production</option>
+        <option value="staging">staging</option>
+        </optgroup>
+        <optgroup>
+          <option value="refresh">refresh</option>
+        </optgroup>
+      </select>
+      <!-- menu bar -->
+      <ul id='links'>
+        <!-- <li>Dr Nic Williams</li> -->
+        <!-- <li><a href="http://community.engineyard.com">Community Forum</a></li> -->
+        <!-- <li><a href='/sso/logout'>Logout</a></li> -->
+      </ul>
+    </div>
+
+    <pre>
+<span style="color: green;">solo i-73f91e19</span>
+<span style="color: green;">Main logs for oss8stepsapp_production:</span>
+[Sun, 20 Jun 2010 19:02:44 -0700] INFO: Starting Chef Solo Run
+[Sun, 20 Jun 2010 19:02:46 -0700] INFO: {"MANPATH"=>
+  "/etc/java-config-2/current-system-vm/man:/usr/local/share/man:/usr/share/man:/usr/share/binutils-data/i686-pc-linux-gnu/2.18/man:/usr/share/gcc-data/i686-pc-linux-gnu/4.1.2/man:/etc/java-config/system-vm/man/:/usr/share/postgresql-8.3/man:/usr/lib/erlang/man",
+ "SHELL"=>"/bin/bash",
+ "SSH_CLIENT"=>"184.73.64.133 57467 22",
+ "USER"=>"root",
+ "CONFIG_PROTECT_MASK"=>
+  "/etc/env.d/java/ /etc/udev/rules.d /etc/fonts/fonts.conf /etc/terminfo /etc/eselect/postgresql /etc/ca-certificates.conf /etc/revdep-rebuild",
+ "PAGER"=>"/usr/bin/less",
+ "RACK_ENV"=>"production",
+ "MAIL"=>"/var/mail/root",
+ "PATH"=>
+  "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/i686-pc-linux-gnu/gcc-bin/4.1.2:/usr/lib/subversion/bin:/usr/local/ey_resin/bin",
+ "_"=>"/usr/local/ey_resin/bin/chef-solo",
+ "PWD"=>"/root",
+ "JAVA_HOME"=>"/etc/java-config-2/current-system-vm",
+ "EDITOR"=>"/bin/nano",
+ "JAVAC"=>"/etc/java-config-2/current-system-vm/bin/javac",
+ "MERB_ENV"=>"production",
+ "SHLVL"=>"3",
+ "HOME"=>"/root",
+ "JDK_HOME"=>"/etc/java-config-2/current-system-vm",
+ "RAILS_ENV"=>"production",
+ "LOGNAME"=>"root",
+ "LESS"=>"-R -M --shift 5",
+ "CVS_RSH"=>"ssh",
+ "GCC_SPECS"=>"",
+ "SSH_CONNECTION"=>"184.73.64.133 57467 10.251.91.130 22",
+ "CLASSPATH"=>".",
+ "LESSOPEN"=>"|lesspipe.sh %s",
+ "INFOPATH"=>
+  "/usr/share/info:/usr/share/binutils-data/i686-pc-linux-gnu/2.18/info:/usr/share/gcc-data/i686-pc-linux-gnu/4.1.2/info",
+ "RUBYOPT"=>""}
+
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Gem: rails:2.3.8 already installed, skipping
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Gem: inherited_resources:1.0.6 already installed, skipping
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Gem: will_paginate:2.3.14 already installed, skipping
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Gem: formtastic:0.9.10 already installed, skipping
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Gem: haml:3.0.12 already installed, skipping
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Applying Recipe: nginx
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Applying Recipe: mongrel
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Making monitrc for: mongrel
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Making monitrc for: memcached
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Ran execute[start-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:02:47 -0700] INFO: Ran execute[remove-sm-from-inittab] successfully
+[Sun, 20 Jun 2010 19:02:50 -0700] INFO: Ran execute[telinit-q] successfully
+[Sun, 20 Jun 2010 19:02:50 -0700] INFO: Ran execute[noop] successfully
+[Sun, 20 Jun 2010 19:02:54 -0700] INFO: Ran execute[reporting for ruby install] successfully
+[Sun, 20 Jun 2010 19:02:57 -0700] INFO: Ran execute[remove-mirror-from-etc-hosts] successfully
+[Sun, 20 Jun 2010 19:02:58 -0700] INFO: Ran execute[reporting for rubygems update] successfully
+[Sun, 20 Jun 2010 19:03:01 -0700] INFO: Ran execute[ensure-user-switching-works] successfully
+[Sun, 20 Jun 2010 19:03:01 -0700] INFO: Ran execute[disassociate-time-from-hardware-clock] successfully
+[Sun, 20 Jun 2010 19:03:01 -0700] INFO: remote_file[/etc/conf.d/ntpd] sending run action to execute[ensure-ntpd-is-running] (immediate)
+[Sun, 20 Jun 2010 19:03:02 -0700] INFO: Ran execute[ensure-ntpd-is-running] successfully
+[Sun, 20 Jun 2010 19:03:04 -0700] INFO: Ran execute[reporting for users] successfully
+[Sun, 20 Jun 2010 19:03:04 -0700] INFO: Ran execute[update-username] successfully
+[Sun, 20 Jun 2010 19:03:04 -0700] INFO: Ran execute[chown homedir to user] successfully
+[Sun, 20 Jun 2010 19:03:04 -0700] INFO: Ran execute[add framework env to /etc/profile] successfully
+[Sun, 20 Jun 2010 19:03:05 -0700] INFO: Ran execute[emerge-sync] successfully
+[Sun, 20 Jun 2010 19:03:05 -0700] INFO: Deleting directory[/root/.gem] recursively at /root/.gem
+[Sun, 20 Jun 2010 19:03:22 -0700] INFO: Ran execute[reporting for backups] successfully
+[Sun, 20 Jun 2010 19:03:26 -0700] INFO: Ran execute[reporting for ssh keys] successfully
+[Sun, 20 Jun 2010 19:03:26 -0700] INFO: Setting mode to 755 for directory[/home/deploy/.ssh]
+[Sun, 20 Jun 2010 19:03:32 -0700] INFO: Ran execute[reporting for monit] successfully
+[Sun, 20 Jun 2010 19:03:35 -0700] INFO: Ran execute[touch monitrc] successfully
+[Sun, 20 Jun 2010 19:03:35 -0700] INFO: Ran execute[remove-mo-from-inittab] successfully
+[Sun, 20 Jun 2010 19:03:37 -0700] INFO: Ran execute[telinit-q] successfully
+[Sun, 20 Jun 2010 19:03:37 -0700] INFO: Ran execute[remove-m0-from-inittab] successfully
+[Sun, 20 Jun 2010 19:03:40 -0700] INFO: Ran execute[telinit-q] successfully
+[Sun, 20 Jun 2010 19:03:40 -0700] INFO: Ran execute[fix the permissions] successfully
+[Sun, 20 Jun 2010 19:03:41 -0700] INFO: Ran execute[reporting for packages] successfully
+[Sun, 20 Jun 2010 19:03:42 -0700] INFO: Ran execute[reporting for rubygems] successfully
+[Sun, 20 Jun 2010 19:03:47 -0700] INFO: Ran execute[reporting for nginx] successfully
+[Sun, 20 Jun 2010 19:03:50 -0700] INFO: Ran execute[remove /etc/nginx] successfully
+[Sun, 20 Jun 2010 19:03:50 -0700] INFO: Creating a symbolic link from /data/nginx -> /etc/nginx for link[/etc/nginx]
+[Sun, 20 Jun 2010 19:03:51 -0700] INFO: Ran execute[ensure-no-old-ssl-vhosts-for-oss8stepsapp] successfully
+[Sun, 20 Jun 2010 19:03:53 -0700] INFO: Ran execute[reporting for deploy keys] successfully
+[Sun, 20 Jun 2010 19:03:53 -0700] INFO: Setting mode to 700 for directory[/home/deploy/.ssh]
+[Sun, 20 Jun 2010 19:03:58 -0700] INFO: Ran execute[clearing old crons] successfully
+[Sun, 20 Jun 2010 19:03:58 -0700] INFO: Ran execute[add resin PATH to cron] successfully
+[Sun, 20 Jun 2010 19:03:58 -0700] INFO: Added cron 'ey-snapshots'
+[Sun, 20 Jun 2010 19:04:00 -0700] INFO: Ran execute[reporting for mysql] successfully
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Ran execute[set-root-mysql-pass] successfully
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Creating template[/tmp/mysql-cleanup.sql] at /tmp/mysql-cleanup.sql
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Setting owner to 0 for template[/tmp/mysql-cleanup.sql]
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Setting group to 0 for template[/tmp/mysql-cleanup.sql]
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Setting mode to 644 for template[/tmp/mysql-cleanup.sql]
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Ran execute[create-database-for-mysql-cleanup] successfully
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Creating template[/tmp/create.oss8stepsapp.sql] at /tmp/create.oss8stepsapp.sql
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Setting owner to 0 for template[/tmp/create.oss8stepsapp.sql]
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Setting group to 0 for template[/tmp/create.oss8stepsapp.sql]
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Setting mode to 644 for template[/tmp/create.oss8stepsapp.sql]
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Ran execute[create-database-for-oss8stepsapp] successfully
+[Sun, 20 Jun 2010 19:04:01 -0700] INFO: Added cron 'mysql'
+[Sun, 20 Jun 2010 19:04:08 -0700] INFO: Ran execute[reporting for collectd] successfully
+[Sun, 20 Jun 2010 19:04:09 -0700] INFO: Ran execute[remove-cd-from-inittab] successfully
+[Sun, 20 Jun 2010 19:04:12 -0700] INFO: Ran execute[telinit-q] successfully
+[Sun, 20 Jun 2010 19:04:12 -0700] INFO: Ran execute[ensure-collectd-has-fresh-config] successfully
+[Sun, 20 Jun 2010 19:04:13 -0700] INFO: Ran execute[reporting for mongrel] successfully
+[Sun, 20 Jun 2010 19:04:21 -0700] INFO: Ran execute[cleanup monit.d dir] successfully
+[Sun, 20 Jun 2010 19:04:21 -0700] INFO: Creating template[/etc/monit.d/mongrel.oss8stepsapp.monitrc] at /etc/monit.d/mongrel.oss8stepsapp.monitrc
+[Sun, 20 Jun 2010 19:04:21 -0700] INFO: Setting owner to 0 for template[/etc/monit.d/mongrel.oss8stepsapp.monitrc]
+[Sun, 20 Jun 2010 19:04:21 -0700] INFO: Setting group to 0 for template[/etc/monit.d/mongrel.oss8stepsapp.monitrc]
+[Sun, 20 Jun 2010 19:04:21 -0700] INFO: Setting mode to 644 for template[/etc/monit.d/mongrel.oss8stepsapp.monitrc]
+[Sun, 20 Jun 2010 19:04:21 -0700] INFO: template[/etc/monit.d/mongrel.oss8stepsapp.monitrc] sending run action to execute[restart-monit] (immediate)
+[Sun, 20 Jun 2010 19:04:21 -0700] INFO: Ran execute[restart-monit] successfully
+[Sun, 20 Jun 2010 19:04:22 -0700] INFO: Ran execute[reporting for memcached] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[rotate-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[rotate-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[create-database-for-oss8stepsapp] sending run action to execute[remove-database-file-for-oss8stepsapp] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[remove-database-file-for-oss8stepsapp] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[cleanup-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[cleanup-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[cleanup-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[cleanup-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[cleanup-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[cleanup-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[rotate-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[rotate-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[rotate-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[rotate-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[create-database-for-mysql-cleanup] sending run action to execute[remove-database-file-for-mysql-cleanup] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[remove-database-file-for-mysql-cleanup] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[cleanup-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[cleanup-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[start-backup-inittab] sending run action to execute[rotate-backup-inittab] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[rotate-backup-inittab] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: execute[noop] sending run action to execute[restart-atd] (delayed)
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Ran execute[restart-atd] successfully
+[Sun, 20 Jun 2010 19:04:25 -0700] INFO: Chef Run complete in 101.702481 seconds
