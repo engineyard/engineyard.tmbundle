@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
 
+# Due to need for escape gem, which name clashes with Textmate Support libs,
+# Moving the Text
+tm_support = $:.select { |path| path =~ %r{SharedSupport/Support/lib} }.first
+$:.reject! { |path| path =~ %r{SharedSupport/Support/lib} }
+$: << tm_support if tm_support
+
 # Render output header
 view = File.dirname(__FILE__) + "/../views/results_prefix.html"
 print File.read(view)
