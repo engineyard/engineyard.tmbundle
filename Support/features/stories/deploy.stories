@@ -1,0 +1,60 @@
+==
+story_type:
+  feature
+name:
+  Deploy - First time user
+description:
+  I want to be asked my credentials when I deploy the first time
+  
+  Acceptance:
+  * Remove ey gem credentials file
+  * Run 'Deploy' command
+  * Enter email + password
+  * Perform deployment
+
+labels:
+  firsttime, command
+
+==
+story_type:
+  feature
+name:
+  Deploy - First time user, failed authentication
+description:
+  I want to be asked my credentials when I deploy the first time
+  
+  Acceptance:
+  * Remove ey gem credentials file
+  * Run 'Deploy' command
+  * Enter bad email + password
+  * Show error msg + reask for credentials and continue
+
+labels:
+  firsttime, command
+
+==
+story_type:
+  feature
+name:
+  Deploy - Subsequent deploys
+description:
+  I want to deploy without being asked my credentials
+
+labels:
+  command
+
+==
+story_type:
+  feature
+name:
+  Deploy - From non-EY project
+description:
+  I want useful error message if I accidentally "deploy" from a non-EY/non-git project
+  
+  * Not a project
+  * Not a git scm project
+  * No git remote
+
+labels:
+  command, error
+
