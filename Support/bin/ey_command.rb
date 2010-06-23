@@ -51,11 +51,3 @@ rescue Interrupt => e
   EY.ui.say("Quitting...")
   exit(1)
 end
-
-# command = ARGV.shift
-# case command.to_sym
-# when :deploy
-# when :rebuild
-# when :logs
-# end
-# 
