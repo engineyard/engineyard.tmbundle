@@ -1,7 +1,7 @@
 module EyCommandHelper
   # Due to need for escape gem, which name clashes with Textmate Support libs,
   # Moving the Text
-  def fix_load_path
+  def fix_load_paths
     tm_support = $:.select { |path| path =~ %r{SharedSupport/Support/lib} }.first
     $:.reject! { |path| path =~ %r{SharedSupport/Support/lib} }
     $: << tm_support if tm_support
