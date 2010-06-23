@@ -42,6 +42,10 @@ module EyCommandHelper
     end  
   end
   
+  def select_environment
+    
+  end
+  
   # Do the work from engineyard gem; standard out goes straight to command output
   def run_command
     ENV['THOR_SHELL'] = 'HTML'
