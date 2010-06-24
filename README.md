@@ -11,3 +11,13 @@ To install via Git:
     osascript -e 'tell app "TextMate" to reload bundles'
 
 Source can be viewed or forked via GitHub: [http://github.com/engineyard/engineyard.tmbundle](http://github.com/engineyard/engine-yard.tmbundle)
+
+
+== Contributions
+
+All rake tasks, Gemfile, "code" and tests are within the Support folder. To get started:
+
+    cd Support
+    bundle install
+    bundle lock
+    rake
