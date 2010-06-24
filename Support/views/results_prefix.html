@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link rel="stylesheet" href="../stylesheets/style.css" type="text/css" media="screen">
     <style type="text/css" media="screen">
       html{height:90%;}
       body{margin:0;padding:0;color:#333;background:#F8F8F8;font:75%/130% Lucida Grande,Verdana,sans-serif;padding-bottom:60px;height:100%;}
@@ -15,16 +16,24 @@
       pre{font-family:"Monaco","Courier New",sans-serif;font-size:11px;}
       code{font-family:"Monaco","Courier New",sans-serif;font-size:11px;font-size:12px;background:#EEE;padding:1px 2px;border:1px solid #E6E6E6;}
       .updated{font-weight:bold;text-transform:uppercase;font-size:8px;color:#339900;}
-  
+
       /* --- Custom --- */
       pre{margin:15px;}
       #framework_env{margin-top:6px;}
+      div.error{padding:10px;margin:0 15px;}
+      
+      #login{width:300px;background:#eee;border:1px solid #ccc;padding:20px 10px 0px;margin:20px auto 0;}
+      #login form ul li{list-style:none;margin:0 0 10px 0;}
+      #login form ul li label{width:80px;display:inline-block;}
+      #login form ul li input[type="text"]{width:150px;}
+      #login form ul li input[type="password"]{width:150px}
+      #login form ul li input[type="submit"]{margin-left:80px}
       /* --- // Custom --- */
-  
+
       #content{padding-bottom:40px;}
       #header,#impersonating,#main{/* min-width:1200px;*/}
       #impersonating{background:#c70000;border-bottom:1px solid #000;color:#fff;font-size:1.4em;font-weight:bold;padding:0.5em;text-align:center;}
-      #header{background:#fcfcfc url('https://cloud.engineyard.com/images/bg_header.gif') repeat-x bottom;_overflow:visible;_zoom:1;overflow:hidden;}
+      #header{background:#fcfcfc url('../images/bg_header.gif') repeat-x bottom;_overflow:visible;_zoom:1;overflow:hidden;}
       #header #branding,#header #links{margin:5px 0;padding:.3em 1.3em;}
       #header #branding{float:left;}
       #header #branding #product{color:#C70000;font-weight:bold;}
@@ -36,7 +45,7 @@
       #header #links li#search input:focus{background:#FFF;}
       #header #links a{margin-right:1em;text-decoration:none;}
       #header #links a:hover{color:#000;}
-  
+
       #message{padding:10px;margin-bottom:4px;}
       #message.error{color:#900;background:#FFF0F0;border:1px solid #900;}
       div.error{color:#900;background:#FFF0F0;border:1px solid #900;}
@@ -74,12 +83,21 @@
           <option value="refresh">refresh</option>
         </optgroup>
       </select>
-      <!-- menu bar -->
       <ul id='links'>
         <!-- <li>Dr Nic Williams</li> -->
         <!-- <li><a href="http://community.engineyard.com">Community Forum</a></li> -->
         <!-- <li><a href='/sso/logout'>Logout</a></li> -->
       </ul>
     </div>
-
+    
+    <div id="login">
+      <form action="#" method="get" accept-charset="utf-8">
+        <ul>
+          <li><label for="username">Username:</label><input type="text" name="username" value="" id="username"></li>
+          <li><label for="password">Password:</label><input type="password" name="password" value="" id="password"></li>
+          <li><input type="submit" value="Login"></li>
+        </ul>
+      </form>
+    </div>
+    
     <pre>
