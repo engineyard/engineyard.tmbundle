@@ -3,6 +3,7 @@ $:.unshift File.dirname(__FILE__) + "/../../bin/"
 
 require 'cucumber'
 require 'rspec'
+require 'escape'
 
 Before do
   @tmp_root = File.dirname(__FILE__) + "/../../tmp"

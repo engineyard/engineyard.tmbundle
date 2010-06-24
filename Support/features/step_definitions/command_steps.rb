@@ -1,3 +1,7 @@
-When /^I execute the "([^"]*)" engineyard command$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+When /^I execute the "([^"]*)" engineyard command$/ do |command|
+  script = File.expand_path(File.dirname(__FILE__) + "/../../bin/ey_command.rb")
+  in_project_folder do
+    @stdout = %x[ #{Escape.shell_command(["ruby", script, command])} ]
+  end
+  puts @stdout
 end
