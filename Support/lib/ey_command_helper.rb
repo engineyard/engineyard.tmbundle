@@ -19,6 +19,7 @@ module EyCommandHelper
     begin
       require "rubygems"
       require "engineyard/cli"
+      # require "gem_patches"
     rescue LoadError => e
       puts <<-HTML
       </pre>
