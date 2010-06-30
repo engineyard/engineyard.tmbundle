@@ -47,20 +47,20 @@ module EyCommandHelper
   end
   
   # Do the work from engineyard gem; standard out goes straight to command output
-  def run_command
+  def run_command(command)
     ENV['THOR_SHELL'] = 'HTML'
-    FileUtils.cd(ENV['TM_PROJECT_DIRECTORY'])
-
-    begin
-      EY::CLI.start
-    rescue EY::Error => e
-      EY.ui.print_exception(e)
-      exit(1)
-    rescue Interrupt => e
-      puts
-      EY.ui.print_exception(e)
-      EY.ui.say("Quitting...")
-      exit(1)
+    FileUtils.cd ENV['TM_PROJECT_DIRECTORY'] do
+      begin
+        EY::CLI.start([command])
+      rescue EY::Error => e
+        EY.ui.print_exception(e)
+        exit(1)
+      rescue Interrupt => e
+        puts
+        EY.ui.print_exception(e)
+        EY.ui.say("Quitting...")
+        exit(1)
+      end
     end
   end
 end
