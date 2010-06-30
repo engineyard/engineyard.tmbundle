@@ -1,4 +1,7 @@
-gem 'cucumber'
+require "bundler"
+Bundler.setup
+
+require 'cucumber'
 require 'cucumber/rake/task'
 
 namespace :cucumber do
