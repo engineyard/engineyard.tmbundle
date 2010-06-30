@@ -3,6 +3,10 @@
 
 == Installation
 
+Dependencies:
+
+    gem install engineyard
+
 To install via Git:
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
