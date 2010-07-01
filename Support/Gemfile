@@ -1,9 +1,13 @@
 # A sample Gemfile
 source :gemcutter
-#
-# gem "rails"
+
+gem "engineyard", ">= 0.8.1"
+
+# test gems
 gem "cucumber", ">= 0.7.0.beta"
 gem "rspec", ">= 2.0.0.beta"
 gem "awesome_print"
 gem "escape", "0.0.4"
-gem "engineyard", ">= 0.8.1"
+gem "fakeweb", "1.2.8", :require => 'fake_web'
+gem "activesupport", ">= 3.0.0.beta"
+gem "json"
