@@ -10,3 +10,13 @@ Then /^I should see deploy output$/ do
   @stdout.should =~ /Beginning deploy for 'rails232app' in 'giblets' on server.../
   @stdout.should =~ /Deploy complete/
 end
+
+Then /^I should see rebuild output$/ do
+  pending
+end
+
+Then /^I should see logs output$/ do
+  @stdout.should =~ /MAIN LOG OUTPUT/
+  @stdout.should =~ /CUSTOM LOG OUTPUT/
+end
+
