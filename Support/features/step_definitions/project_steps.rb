@@ -10,6 +10,6 @@ Given /^it is a git repository with a remote$/ do
     %x[ git init ]
     %x[ git add . ]
     %x[ git commit -m "initial commit" ]
-    %x[ git remote add origin git@github.fake:/drnic/somefakerepo.git ]
+    %x[ git remote add origin user@git.host:path/to/repo.git ]
   end
 end

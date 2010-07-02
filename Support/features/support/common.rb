@@ -26,15 +26,6 @@ module CommonHelpers
     ENV['TM_PROJECT_DIRECTORY'] = @active_project_folder
   end
   
-  def capture_stdout(&block)
-    orig_stdout = $stdout
-    $stdout = StringIO.new
-    yield
-    $stdout.rewind
-    stdout = $stdout.read
-    $stdout = orig_stdout
-    stdout
-  end
 end
 
 World(CommonHelpers)

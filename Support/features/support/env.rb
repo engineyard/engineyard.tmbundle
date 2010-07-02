@@ -4,13 +4,6 @@ $:.unshift File.dirname(__FILE__) + "/../../bin/"
 require "bundler"
 Bundler.setup
 Bundler.require :default
-# require 'cucumber'
-# require 'rspec'
-# require 'escape'
-# require 'fakeweb'
-# require 'engineyard'
-# require 'engineyard/cli'
-# require 'json'
 
 Before do
   @tmp_root = File.dirname(__FILE__) + "/../../tmp"
@@ -18,5 +11,5 @@ Before do
   FileUtils.rm_rf   @tmp_root
   FileUtils.mkdir_p @home_path
   ENV['HOME'] = @home_path
-  FakeWeb.allow_net_connect = false
 end
+
