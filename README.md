@@ -22,6 +22,11 @@ Source can be viewed or forked via GitHub: [http://github.com/engineyard/enginey
 All rake tasks, Gemfile, "code" and tests are within the Support folder. To get started:
 
     cd Support
+    gem install bundler -v 0.9.26
     bundle install
-    bundle lock
     rake
+
+If you need to add/remove/change development gem dependencies, modify the Gemfile and then:
+
+    bundle unlock && bundle install && bundle lock
+
