@@ -37,7 +37,7 @@ dependencies:
   cucumber: 
     group: 
     - :default
-    version: ">= 0.7.0.beta"
+    version: = 0.8.3
   engineyard: 
     group: 
     - :default
@@ -80,7 +80,7 @@ specs:
 - mime-types: 
     version: "1.16"
 - rest-client: 
-    version: 1.5.1
+    version: 1.6.0
 - termios: 
     version: 0.9.4
 - thor: 
@@ -111,7 +111,7 @@ specs:
     version: 0.10.3
 - sinatra: 
     version: "1.0"
-hash: 62ce96e17277b68e5cc570990c05a3af233a28cf
+hash: 6589c3f53e7e73e3cca4490393d5ffaf52f12cd6
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
