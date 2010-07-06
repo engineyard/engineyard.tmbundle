@@ -6,10 +6,10 @@ require "choctop"
 ChocTop::Configuration.new do |s|
   s.name = 'Engine Yard.tmbundle'
   
-  s.add_root :position => [285, 200], :name => 'Engine Yard.tmbundle', :exclude => %w[Support/build]
+  s.add_root :position => [285, 200], :exclude => %w[build .bundle .git]
 
-  s.background_file = 'dmg/engineyard.tmbundle.dmg.png'
-  s.volume_icon     = 'dmg/engineyard.dmg.icns'
+  s.background_file = 'Support/dmg/engineyard.tmbundle.dmg.png'
+  s.volume_icon     = 'Support/dmg/engineyard.dmg.icns'
 
   # Remote upload target (set host if not same as Info.plist['SUFeedURL'])
   # s.host     = 'support.com'

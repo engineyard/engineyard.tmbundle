@@ -21,7 +21,6 @@ Source can be viewed or forked via GitHub: [http://github.com/engineyard/enginey
 
 All rake tasks, Gemfile, "code" and tests are within the Support folder. To get started:
 
-    cd Support
     gem install bundler -v 0.9.26
     bundle install
     rake
@@ -34,4 +33,8 @@ If you need to add/remove/change development gem dependencies, modify the Gemfil
 
 You can regenerate the DMG for the project:
 
-    rake dmg
+    rake clean_build dmg
+
+The DMG is stored in `appcast/Engine Yard.tmbundle`
+
+    open appcast/Engine\ Yard.tmbundle
