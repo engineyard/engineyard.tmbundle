@@ -30,3 +30,8 @@ If you need to add/remove/change development gem dependencies, modify the Gemfil
 
     bundle unlock && bundle install && bundle lock
 
+== Packaging and Deployment
+
+You can regenerate the DMG for the project:
+
+    rake dmg
