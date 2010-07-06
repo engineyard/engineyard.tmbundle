@@ -1,4 +1,4 @@
-engineyard_loaded_path = $:.select { |path| path =~ %r|engineyard| }.first
+engineyard_loaded_path = $:.select { |path| path =~ %r|gems/engineyard-\d+| }.first
 EY_ROOT = engineyard_loaded_path.gsub(%r|/\w+$|,'')
 
 support = Dir[File.join(EY_ROOT,'/spec/support/*.rb')]
