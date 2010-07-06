@@ -1,6 +1,21 @@
 require "bundler"
 Bundler.setup
 
+require "choctop"
+
+ChocTop::Configuration.new do |s|
+  s.name = 'Engine Yard.tmbundle'
+  
+  s.add_root :position => [285, 200], :name => 'Engine Yard.tmbundle'
+  s.background_file = 'dmg/engineyard.tmbundle.dmg.png'
+  # s.volume_icon = 'dmg/dmg.icns'
+
+  # Remote upload target (set host if not same as Info.plist['SUFeedURL'])
+  # s.host     = 'support.com'
+  s.remote_dir = '/path/to/upload/root/of/app'
+
+end
+
 require 'cucumber'
 require 'cucumber/rake/task'
 
