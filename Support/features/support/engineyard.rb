@@ -2,8 +2,10 @@ engineyard_loaded_path = $:.select { |path| path =~ %r|gems/engineyard-\d+| }.fi
 EY_ROOT = engineyard_loaded_path.gsub(%r|/\w+$|,'')
 
 support = Dir[File.join(EY_ROOT,'/spec/support/*.rb')]
+ap support
 support.each{|helper| require helper }
 World(Spec::Helpers)
+exit
 
 # temporary monkey patch
 module EY
