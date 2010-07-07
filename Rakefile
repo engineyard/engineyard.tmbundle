@@ -6,7 +6,8 @@ require "choctop"
 ChocTop::Configuration.new do |s|
   s.name = 'Engine Yard.tmbundle'
   
-  s.add_root :position => [285, 200], :exclude => %w[build .bundle .git]
+  s.add_root :position => [290, 200], :exclude => %w[build .bundle .git]
+  s.add_link 'http://github.com/engineyard/engineyard.tmbundle', 'GitHub', :position => [520, 200]
 
   s.background_file = 'Support/dmg/engineyard.tmbundle.dmg.png'
   s.volume_icon     = 'Support/dmg/engineyard.dmg.icns'
