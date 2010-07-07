@@ -1,0 +1,125 @@
+--- 
+dependencies: 
+  ruby-debug: 
+    group: 
+    - :default
+    version: ">= 0"
+  fakeweb: 
+    group: 
+    - :default
+    version: = 1.2.8
+    require: 
+    - fake_web
+  realweb: 
+    group: 
+    - :default
+    version: ~> 0.1.6
+  escape: 
+    group: 
+    - :default
+    version: = 0.0.4
+  choctop: 
+    group: 
+    - :rakefile
+    version: ">= 0"
+  rspec: 
+    group: 
+    - :default
+    version: ">= 2.0.0.beta"
+  sinatra: 
+    group: 
+    - :default
+    version: ">= 0"
+  json: 
+    group: 
+    - :default
+    version: ">= 0"
+  awesome_print: 
+    group: 
+    - :default
+    version: ">= 0"
+  cucumber: 
+    group: 
+    - :rakefile
+    version: = 0.8.3
+  engineyard: 
+    group: 
+    - :default
+    version: = 0.8.2
+  activesupport: 
+    group: 
+    - :default
+    version: ">= 3.0.0.beta"
+  open4: 
+    group: 
+    - :default
+    version: ">= 0"
+specs: 
+- RedCloth: 
+    version: 4.2.3
+- activesupport: 
+    version: 3.0.0.beta4
+- awesome_print: 
+    version: 0.2.1
+- builder: 
+    version: 2.1.2
+- escape: 
+    version: 0.0.4
+- choctop: 
+    version: 0.13.0
+- columnize: 
+    version: 0.3.1
+- diff-lcs: 
+    version: 1.1.2
+- trollop: 
+    version: 1.16.2
+- gherkin: 
+    version: 2.0.2
+- json_pure: 
+    version: 1.4.3
+- term-ansicolor: 
+    version: 1.0.5
+- cucumber: 
+    version: 0.8.3
+- highline: 
+    version: 1.5.2
+- json: 
+    version: 1.4.3
+- mime-types: 
+    version: "1.16"
+- rest-client: 
+    version: 1.6.0
+- termios: 
+    version: 0.9.4
+- thor: 
+    version: 0.13.7
+- engineyard: 
+    version: 0.8.2
+- fakeweb: 
+    version: 1.2.8
+- linecache: 
+    version: "0.43"
+- open4: 
+    version: 1.0.1
+- rack: 
+    version: 1.2.1
+- realweb: 
+    version: 0.1.6
+- rspec-core: 
+    version: 2.0.0.beta.16
+- rspec-expectations: 
+    version: 2.0.0.beta.16
+- rspec-mocks: 
+    version: 2.0.0.beta.16
+- rspec: 
+    version: 2.0.0.beta.16
+- ruby-debug-base: 
+    version: 0.10.3
+- ruby-debug: 
+    version: 0.10.3
+- sinatra: 
+    version: "1.0"
+hash: 4ed455686f6204a6bd2f646d0da01411b2d4f026
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
