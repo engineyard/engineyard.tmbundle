@@ -5,7 +5,7 @@ gem 'engineyard', '0.8.2'
 # test gems
 gem 'cucumber', '0.8.3'
 gem 'rspec', '>= 2.0.0.beta'
-gem 'awesome_print'
+gem 'awesome_print', :require => 'ap'
 gem 'escape', '0.0.4'
 gem 'fakeweb', '1.2.8', :require => 'fake_web'
 gem 'activesupport', '>= 3.0.0.beta'
@@ -16,6 +16,5 @@ gem 'realweb', '~>0.1.6'
 gem 'ruby-debug'
 
 group :rakefile do
-  gem 'cucumber', '0.8.3'
   gem 'choctop'
 end

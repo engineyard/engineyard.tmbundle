@@ -1,15 +1,15 @@
 --- 
 dependencies: 
-  ruby-debug: 
-    group: 
-    - :default
-    version: ">= 0"
   fakeweb: 
     group: 
     - :default
     version: = 1.2.8
     require: 
     - fake_web
+  ruby-debug: 
+    group: 
+    - :default
+    version: ">= 0"
   realweb: 
     group: 
     - :default
@@ -26,26 +26,28 @@ dependencies:
     group: 
     - :default
     version: ">= 2.0.0.beta"
-  sinatra: 
-    group: 
-    - :default
-    version: ">= 0"
-  json: 
-    group: 
-    - :default
-    version: ">= 0"
   awesome_print: 
     group: 
     - :default
     version: ">= 0"
-  cucumber: 
+    require: 
+    - ap
+  json: 
     group: 
-    - :rakefile
-    version: = 0.8.3
+    - :default
+    version: ">= 0"
+  sinatra: 
+    group: 
+    - :default
+    version: ">= 0"
   engineyard: 
     group: 
     - :default
     version: = 0.8.2
+  cucumber: 
+    group: 
+    - :default
+    version: = 0.8.3
   activesupport: 
     group: 
     - :default
@@ -66,7 +68,7 @@ specs:
 - escape: 
     version: 0.0.4
 - choctop: 
-    version: 0.13.0
+    version: 0.13.1
 - columnize: 
     version: 0.3.1
 - diff-lcs: 
@@ -106,20 +108,20 @@ specs:
 - realweb: 
     version: 0.1.6
 - rspec-core: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - rspec-expectations: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - rspec-mocks: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - rspec: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - ruby-debug-base: 
     version: 0.10.3
 - ruby-debug: 
     version: 0.10.3
 - sinatra: 
     version: "1.0"
-hash: 4ed455686f6204a6bd2f646d0da01411b2d4f026
+hash: 23b1cf14715d79b23e10e49c97b08c782ddd8af9
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
