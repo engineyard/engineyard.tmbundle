@@ -72,17 +72,7 @@
       <div id='branding'>
         <span id='product'>Engine Yard Cloud&trade;</span>
       </div>
-      <select name="environment[framework_env]" custom="" id="framework_env">
-        <optgroup>
-        <option value="custom">custom</option>
-        <option value="development">development</option>
-        <option selected="selected" value="production">production</option>
-        <option value="staging">staging</option>
-        </optgroup>
-        <optgroup>
-          <option value="refresh">refresh</option>
-        </optgroup>
-      </select>
+      <span id="framework_env"><%= framework_env || "default" %></span>
       <ul id='links'>
         <!-- <li>Dr Nic Williams</li> -->
         <!-- <li><a href="http://community.engineyard.com">Community Forum</a></li> -->

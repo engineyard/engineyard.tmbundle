@@ -2,9 +2,10 @@
 module TextMate
   module UI
     class << self
+      # Currently hard-wired for selecting the last item from a list of environments
       def menu(options)
         return nil if options.empty?
-        raise NotImplementedError
+        options.size - 1
       end
     end
   end

@@ -9,6 +9,7 @@ Feature: Selecting environments
     And it is a git repository with a remote
     And I have setup my engineyard email/password for API access
     When I execute the "deploy" engineyard command
+    Then I should be in the "giblets" environment
     Then I should see deploy output
   
   Scenario: Run command for multiple environments without having selected one
@@ -24,7 +25,7 @@ Feature: Selecting environments
     And I have "one app, many environments"
     And it is a git repository with a remote
     And I have setup my engineyard email/password for API access
-    And I expect to select one of the environments
-    When I select one of the environments
+    When I select the last environment in the list
     When I execute the "deploy" engineyard command
+    Then I should be in the "bakon" environment
     Then I should see deploy output

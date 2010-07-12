@@ -1,3 +1,6 @@
+require "erb"
+require "ostruct"
+
 module EyCommandHelper
   # Due to need for escape gem, which name clashes with Textmate Support libs,
   # Moving the Text
@@ -9,8 +12,10 @@ module EyCommandHelper
   
   # Render output header
   def render_header
-    view = File.dirname(__FILE__) + "/../views/results_prefix.html"
-    print File.read(view)
+    view     = File.dirname(__FILE__) + "/../views/results_prefix.html.erb"
+    template = File.read(view)
+    vars     = OpenStruct.new :framework_env => environment
+    print ERB.new(template).result(vars.send(:binding))
     $stdout.flush
   end
   
@@ -43,8 +48,8 @@ module EyCommandHelper
   end
   
   # Use git config to determine current target environment
-  def select_environment
-    
+  def environment
+    "production"
   end
   
   # Do the work from engineyard gem; standard out goes straight to command output

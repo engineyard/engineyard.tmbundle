@@ -10,7 +10,6 @@ def execute_and_display(command)
   fix_load_paths
   render_header
   setup_ok?
-  select_environment
   run_command command
 end
 
