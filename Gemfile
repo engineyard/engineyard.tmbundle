@@ -14,6 +14,7 @@ gem 'open4'
 gem 'sinatra'
 gem 'realweb', '~>0.1.6'
 gem 'ruby-debug'
+gem 'nokogiri', '1.4.2'
 
 group :rakefile do
   gem 'choctop'
