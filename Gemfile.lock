@@ -43,7 +43,7 @@ dependencies:
   engineyard: 
     group: 
     - :default
-    version: = 0.8.2
+    version: = 0.9.0
   cucumber: 
     group: 
     - :default
@@ -96,7 +96,7 @@ specs:
 - thor: 
     version: 0.13.7
 - engineyard: 
-    version: 0.8.2
+    version: 0.9.0
 - fakeweb: 
     version: 1.2.8
 - linecache: 
@@ -121,7 +121,7 @@ specs:
     version: 0.10.3
 - sinatra: 
     version: "1.0"
-hash: 23b1cf14715d79b23e10e49c97b08c782ddd8af9
+hash: ec6dc844f7f351bc41500bd0a5299a1848114a0d
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

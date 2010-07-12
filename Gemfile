@@ -1,6 +1,6 @@
 source :gemcutter
 
-gem 'engineyard', '0.8.2'
+gem 'engineyard', '0.9.0'
 
 # test gems
 gem 'cucumber', '0.8.3'
