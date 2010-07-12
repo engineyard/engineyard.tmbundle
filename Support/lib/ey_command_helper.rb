@@ -42,6 +42,7 @@ module EyCommandHelper
     end  
   end
   
+  # Use git config to determine current target environment
   def select_environment
     
   end

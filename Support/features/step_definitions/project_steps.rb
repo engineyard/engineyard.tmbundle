@@ -13,3 +13,9 @@ Given /^it is a git repository with a remote$/ do
     %x[ git remote add origin user@git.host:path/to/repo.git ]
   end
 end
+
+Given /^I expect to select one of the environments$/ do
+  expected_items = []
+  selected_item = ""
+  # TextMate::UI.menu(options)
+end

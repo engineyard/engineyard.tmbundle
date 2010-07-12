@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 $:.unshift(File.dirname(__FILE__) + "/../lib")
+$:.push(File.join(ENV['TM_SUPPORT_PATH'], 'lib')) if ENV['TM_SUPPORT_PATH']
 
 require "ey_command_helper"
 include EyCommandHelper
